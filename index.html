@@ -92,8 +92,8 @@
                             <div class="row h-100 align-items-center justify-content-center text-center">
                                 <div class="col-lg-8 align-self-end"
                                     style="object-fit: cover; width: 100%; height: 100%;">
-                                    <img src="assets/naveen.jfif" class="img-fluid rounded-image" alt="Image" class="img-fluid"
-                                        style="height: 60%;">
+                                    <img src="assets/naveen.jfif" class="img-fluid rounded-image" alt="Image"
+                                        class="img-fluid" style="height: 60%;">
                                     <h2>Dr. N.Naveen</h2>
                                     <p style=" font-family: Arial, sans-serif;">Assistant Professor <br>
                                         EB-108, New Building, <br>
@@ -127,9 +127,9 @@
                                 </div>
                                 <div class="publication-card">
                                     <h4>Bankruptcy Prediction Using Memetic Algorithm</h4>
-                                    <p style=" font-family: Arial, sans-serif;">In Proceedings of the International
-                                        Conference on Multi-disciplinary Trends in
-                                        Artificial Intelligence </p>
+                                    <p style=" font-family: Arial, sans-serif;">This paper proposes a new memetic
+                                        algorithm using Cuckoo search algorithm and Particle Swarm Optimization
+                                        algorithm. </p>
                                     <a href="#publications" class="btn btn-primary">Read More</a>
                                 </div>
                             </div>
@@ -900,10 +900,7 @@
         </div>
     </section>
 
-    <!-- Call to action-->
 
-
-    <!-- Portfolio-->
 
 
     <!-- Contact-->
@@ -920,29 +917,30 @@
             <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
                 <div class="col-lg-6">
 
-                    <form id="contactForm" action="send_email.php" method="POST">
+                    <form id="contactForm" action="mailto:naveencis@uohyd.ac.in" method="POST">
                         <!-- Name input-->
                         <div class="form-floating mb-3">
                             <input class="form-control" id="name" type="text" placeholder="Enter your name..."
-                                data-sb-validations="required" />
+                                name="name: " required />
                             <label for="name">Full name</label>
+
                             <div class="invalid-feedback" data-sb-feedback="name:required">A
                                 name is required.</div>
                         </div>
                         <!-- Email address input-->
                         <div class="form-floating mb-3">
                             <input class="form-control" id="email" type="email" placeholder="name@example.com"
-                                data-sb-validations="required,email" />
+                                name="email: " required />
                             <label for="email">Email address</label>
                             <div class="invalid-feedback" data-sb-feedback="email:required">
                                 An email is required.</div>
-                            <div class="invalid-feedback" data-sb-feedback="email:email">
+                            <div class="invalid-feedback" data-sb-feedback="email: email">
                                 Email is not valid.</div>
                         </div>
                         <!-- Phone number input-->
                         <div class="form-floating mb-3">
                             <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"
-                                data-sb-validations="required" />
+                                name="Phone number: " required />
                             <label for="phone">Phone number</label>
                             <div class="invalid-feedback" data-sb-feedback="phone:required">
                                 A phone number is required.</div>
@@ -951,35 +949,21 @@
                         <div class="form-floating mb-3">
                             <h6>Preferred Date and Time<h6>
                                     <label for="datetime"></label>
-                                    <input type="datetime-local" id="datetime" name="datetime" required>
+                                    <input type="datetime-local" id="datetime" name="Date_and_time" required>
                         </div>
 
                         <!-- Message input-->
                         <div class="form-floating mb-3">
-                            <textarea class="form-control" id="message" type="text"
-                                placeholder="Enter your message here..." style="height: 10rem"
-                                data-sb-validations="required"></textarea>
+                            <textarea class="form-control" id="message" name="message"
+                                placeholder="Enter your message here..." style="height: 10rem" required></textarea>
                             <label for="message">Message</label>
                             <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.
                             </div>
                         </div>
-                        <!-- Submit success message-->
-                        <!---->
-                        <!-- This is what your users will see when the form-->
-                        <!-- has successfully submitted-->
-                        <div class="d-none" id="submitSuccessMessage">
-                            <div class="text-center mb-3">
-                                <div class="fw-bolder">Form submission successful!</div>
-                                To activate this form, sign up at
-                                <br />
-                                <a
-                                    href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                            </div>
-                        </div>
-                        <!-- Submit error message-->
-                        <!---->
-                        <!-- This is what your users will see when there is-->
-                        <!-- an error submitting the form-->
+
+
+
+
                         <div class="d-none" id="submitErrorMessage">
                             <div class="text-center text-danger mb-3">Error sending message!
                             </div>
@@ -1005,20 +989,23 @@
         <div class="container px-4 px-lg-5">
             <div class="small text-muted">
                 <div class="d-flex justify-content-between">
-                    <div >
-                        <a href="https://www.facebook.com"><img src="assets/facebook.png" alt="Facebook" class="logo-img"
+                    <div>
+                        <a href="https://www.facebook.com/naveen.nekuri"><img src="assets/facebook.png" alt="Facebook"
+                                class="logo-img"
                                 style="height: 20px; width: 20px; margin-top: -20px; margin-bottom: -20px;"></a>
-                        <a href="https://www.instagram.com"><img src="assets/instagram.png" alt="Instagram" class="logo-img"
-                                style="height: 20px; width: 20px;"></a>
+                        <a href="https://www.instagram.com/naveen.nekuri"><img src="assets/instagram.png"
+                                alt="Instagram" class="logo-img" style="height: 20px; width: 20px;"></a>
+                        <a href="https://www.linkedin.com/in/dr-naveen-nekuri-1343b9b/"><img src="assets/linkedin.png"
+                                alt="LinkedIn" class="logo-img" style="height: 20px; width: 20px;"></a>
                     </div>
-                    <div style="width: 96%;">
+                    <div style="width: 94%;">
                         <p class="text-center">&copy; 2023 - Nekuri Naveen</p>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-    
+
 
 
 
